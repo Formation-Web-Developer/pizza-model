@@ -1,0 +1,315 @@
+@font-face{
+    font-family: 'Amaticsc';
+    src: url('../font/amaticsc.woff2') format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+body, input, button, li, a{
+    font-family: 'Amaticsc';
+    color: white;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: none;
+}
+
+h1, h2, .menu-header label, .title a{
+    font-weight: normal;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    margin-bottom: 3rem;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+    display: none;
+}
+
+img, header, .nav, header::before, section, .col, .menu-header ul,
+.menu-header label, .about-chief, .w-100, input, button
+{
+    width: 100%;
+}
+
+.bg-dark{
+    background-color: black;
+}
+
+.bold, .menu-title{
+    font-weight: 600;
+}
+
+.mtb-1{
+    margin: 1.2rem 0;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    height: 45rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    background: url('../img/pizza.jpg') center / cover no-repeat;
+}
+
+.nav{
+    position: fixed;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.274);
+    z-index: 10;
+    height: 4rem;
+}
+
+.nav-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 4rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    overflow: hidden;
+    height: 0;
+    transition: .3s;
+}
+
+input[type="checkbox"]:checked ~ .nav-menu
+{
+    height: 410%;
+}
+
+li, .title a{
+    display: block;
+}
+
+li{
+    font-size: 2rem;
+}
+
+.nav label{
+    width: 2rem;
+}
+
+.nav-menu a, .bg-dark, .menu-header label{
+    padding: .8rem;
+}
+
+.title{
+    margin: auto;
+}
+
+header > p{
+    position: absolute;
+    font-size: 1rem;
+    bottom: .8rem;
+    left: .8rem;
+}
+
+.col{
+    padding: 3rem .8rem;
+    overflow: hidden;
+}
+
+/* SECTION MENU */
+
+.menu-header, .menu-header ul{
+    display: flex;
+}
+
+.menu-list{
+    background-color: white;
+    padding: 0 2rem;
+    transition: .5s;
+    position: relative;
+    height: 0;
+    left: 200%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgb(148, 146, 146);
+    font-size: 2rem;
+}
+
+.menu:last-child{
+    border: none;
+}
+
+.menu-misc{
+    color: black;
+}
+
+.menu-description{
+    padding-top: .8rem;
+}
+
+.menu-price{
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.menu-price, .hot, .new, .chief-info > p{
+    border-radius: .3rem;
+    padding: .5rem;
+}
+
+#menu #pizza:checked ~ .menu-header #labelPizza,
+#menu #salads:checked ~ .menu-header #labelSalads,
+#menu #starter:checked ~ .menu-header #labelStarter,
+.hot
+{
+    background-color: red;
+}
+
+.new{
+    background-color: rgba(82, 82, 82, 0.541);
+}
+
+#menu #pizza:checked ~ #contentPizza,
+#menu #salads:checked ~ #contentSalads,
+#menu #starter:checked ~ #contentStarter
+{
+    height: fit-content;
+    left: 0;
+}
+
+/* ABOUT */
+#about{
+    background-color: #8C5F5A;
+}
+
+#about .col, form{
+    flex-direction: column;
+}
+
+.col .about-chief{
+    justify-content: space-between;
+}
+
+.about-chief img{
+    width: 6rem;
+    height: 4rem;
+    -webkit-border-radius: 3rem / 2rem;
+    -moz-border-radius:    3rem / 2rem; 
+    border-radius:         3rem / 2rem;
+}
+
+.hours{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hour{
+    width: 50%;
+}
+
+/* GOOGLE MAPS */
+#googleMap{
+    height: 45rem;
+}
+
+/* Contact */
+#contact{
+    background-color: #6B7A81;
+}
+
+#contact p{
+    line-height: 3rem;
+}
+
+input, button{
+    margin: .5rem 0;
+    height: 3rem;
+    color: rgb(41, 41, 41);
+    border: none;
+    outline: none;
+    padding: .8rem;
+}
+
+button{
+    background-color: #CBCCCE;
+}
+
+/* Footer */
+footer{
+    height: 8rem;
+}
+
+/* LARGE SCREEN */
+
+@media screen and (min-width: 768px)
+{
+    .col{
+        width: 60vw;
+        margin: auto;
+    }
+
+    .nav{
+        justify-content: left;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .nav > label{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        position: static;
+        background-color: transparent;
+        transition: 0s;
+    }
+
+    li{
+        display: inline;
+    }
+
+    .nav-menu a:hover{
+        background-color: black;
+    }
+}

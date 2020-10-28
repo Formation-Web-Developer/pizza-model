@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thin Crust Pizza</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <!-- NAVIGATION BAR -->
+            <nav class="nav flex-center">
+
+                <!--  MOBILE SCREEN BURGER MENU -->
+                <label for="menuHeader"><img src="assets/img/menu-burger.png" alt="Menu Burger"></label>
+                
+                <!-- INPUT CHECKBOX FOR NAV MENU FOR MOBILE SCREEN -->
+                <input type="checkbox" id="menuHeader">
+
+                <!-- NAV MENU -->
+                <ul class="nav-menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#menu"><li>Menu</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+
+            <!-- WEBSITE TITLE -->
+            <div class="title">
+                <h1>Thin<br>Crust Pizza</h1>
+                <a class="bg-dark" href="#menu">Let me see the menu</a>
+            </div>
+
+            <!-- OPENING INFO -->
+            <p class="bg-dark">Open from 10Am To 12PM</p>
+        </header>
+
+        <main>
+            <!-- SECTION MENU -->
+
+            <section id="menu" class="bg-dark">
+                <div class="col">
+
+                    <!-- MENU TITLE -->
+                    <h2>The Menu</h2>
+
+                    <!-- INPUT RADIO HIDDEN TO SWITCH MENU PANNEL. -->
+                    <input type="radio" name="selectMenu" id="pizza" checked>
+                    <input type="radio" name="selectMenu" id="salads">
+                    <input type="radio" name="selectMenu" id="starter">
+
+                    <!-- NAV -->
+                    <nav class="menu-header">
+                        <ul>
+                            <label for="pizza" id="labelPizza">
+                                <li>Pizza</li>
+                            </label>
+                            <label for="salads" id="labelSalads">
+                                <li>Salads</li>
+                            </label>
+                            <label for="starter" id="labelStarter">
+                                <li>Starter</li>
+                            </label>
+                        </ul>
+                    </nav>
+
+                    <!-- PIZZA MENU -->
+                    <div class="menu-list" id="contentPizza">
+
+                        <!-- PIZZA 1 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Margherita</p>
+                                <p class="menu-description">Fresh Tomatoes, Fresh Mozzarella, Fresh Basil</p>
+                            </div>
+                            <p class="menu-price">$12.50</p>
+                        </div>
+
+                        <!-- PIZZA 2 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Formaggio</p>
+                                <p class="menu-description">Four cheeses (Mozzarella, Parmesan, Pecorino, Jarlsberg)</p>
+                            </div>
+                            <p class="menu-price">$15.50</p>
+                        </div>
+
+                        <!-- PIZZA 3 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Chicken</p>
+                                <p class="menu-description">Fresh Tomatoes, Mozzarella, Chicken, Onions</p>
+                            </div>
+                            <p class="menu-price">$17.00</p>
+                        </div>
+
+                        <!-- PIZZA 4 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Pineapple'o'clock</p>
+                                <p class="menu-description">Fresh Tomatoes, Mozzarella, Fresh Pineapple, Bacon, Fresh basil</p>
+                            </div>
+                            <p class="menu-price">$16.50</p>
+                        </div>
+
+                        <!-- PIZZA 5 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Meat town <span class="hot">Hot</span></p>
+                                <p class="menu-description">Fresh Tomatoes, Mozzarella, Hot pepporoni, Hot sauvage, Beef, Chicken</p>
+                            </div>
+                            <p class="menu-price">$20.00</p>
+                        </div>
+
+                        <!-- PIZZA 6 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Parma <span class="new">New</span></p>
+                                <p class="menu-description">Fresh Tomatoes, Mozzarella, Parma, Bacon, Fresh Arugula</p>
+                            </div>
+                            <p class="menu-price">$21.50</p>
+                        </div>
+                    </div>
+
+                    <!-- SALADS MENU -->
+                    <div class="menu-list" id="contentSalads">
+
+                        <!-- SALADS 1 -->
+
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">TIKKA CHICKEN<span class="new">New</span></p>
+                                <p class="menu-description">Fresh Tomatoes, Fresh BUT, CUCUMBER, ONIONS</p>
+                            </div>
+                            <p class="menu-price">$7.50</p>
+                        </div>
+                    </div>
+
+                    <!-- STARTER MENU -->
+                    <div class="menu-list" id="contentStarter">
+
+                        <!-- STARTER 1 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Margherita <span class="hot">Hot</span></p>
+                                <p class="menu-description">Fresh Tomatoes, Fresh Mozzarella, Fresh Basil</p>
+                            </div>
+                            <p class="menu-price">$12.50</p>
+                        </div>
+
+                        <!-- STARTER 2 -->
+                        <div class="menu">
+                            <div class="menu-misc">
+                                <p class="menu-title">Margherita</p>
+                                <p class="menu-description">Fresh Tomatoes, Fresh Mozzarella, Fresh Basil</p>
+                            </div>
+                            <p class="menu-price">$12.50</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+
+            <section id="about">
+                <div class="col flex-center">
+
+                    <!-- ABOUT TITLE -->
+                    <h2>About</h2>
+
+                    <!-- ABOUT TEXT -->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, ex eos voluptate ratione quae cumque praesentium eaque iure nostrum voluptatibus libero ad quos maiores neque, illum inventore, quia repellat atque.</p>
+                    
+                    <!-- ABOUT CHIEF -->
+                    <div class="about-chief flex-center mtb-1">
+                        <div class="chief-info">
+                            <p><span class="bold">The Chef?</span> Mr. Italiano himself</p>
+                            <p>We are proud of our interiors.</p>
+                        </div>
+                        <img src="assets/img/chef.jpg" alt="">
+                    </div>
+
+                    <!-- ABOUT IMG -->
+                    <img src="assets/img/onepage_restaurant.jpg" alt="">
+
+
+                    <!-- HOURS TITLE -->
+                    <p class="bold w-100 mtb-1">Opening Hours</p>
+
+                    <!-- HOUR LIST -->
+                    <div class="hours w-100 mtb-1">
+                        <div class="hour mtb-1">Mon & Tue CLOSED</div>
+                        <div class="hour mtb-1">Wednesday 10:00 - 24:00</div>
+                        <div class="hour mtb-1">Thurday 10:00 - 24:00</div>
+                        <div class="hour mtb-1">Friday 10:00 - 12:00</div>
+                        <div class="hour mtb-1">Saturday 10:00 - 23:00</div>
+                        <div class="hour mtb-1">Sunday CLOSED</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- GOOGLE MAP USED BY THE JS SCRIPT UNDER THE FOOTER -->
+            <div id="googleMap" class="w-100"></div>
+
+            <!-- SECTION CONTACT -->
+            <section id="contact">
+                <div class="col">
+
+                    <!-- MENU CONTACT -->
+                    <h2>Contact</h2>
+
+                    <!-- CONTACT TEXT -->
+                    <p class="mtb-1">Find us at some address at some place or call us at 05050515-122330</p>
+                    <p class="mtb-1"><span class="bg-dark">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                    <p class="mtb-1"><span class="font-weight">Reserve</span> a table, ask for today's special or just send us a message:</p>
+
+                    <!-- CONTACT FORM -->
+                    <form action="" method="POST" class="flex-center" name="contact">
+                        <input type="text" name="name" placeholder="NAME">
+                        <input type="number" name="guest" placeholder="How many people ?">
+                        <input type="datetime-local" name="date" value="2017-11-16T20:00">
+                        <input type="text" name="message" placeholder="Message \ Special Requirements">
+                        <button>SEND MESSAGE</button>
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="flex-center bg-dark bold">
+            Powered by
+        </footer>
+
+        <!-- JAVASCRIPT FOR THE GOOGLE MAP -->
+        <script>
+            function showMap() {
+                new google.maps.Map(document.getElementById("googleMap"), {
+                    center: new google.maps.LatLng(49.0833, 1.4833),
+                    zoom: 11,
+                });
+            }
+        </script>
+
+        <!-- 
+            URL TO CALL THE GOOGLE API TO DISPLAY THE GOOGLE MAP BY CALLING THE showMap FUNCTION ABOVE.
+
+            THE KEY IS PRIVATE!!! DON'T LEAK PLEASE!!!
+        -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYCZZq6t8PsonTtNomkSHY0LglXuwNcIk&callback=showMap"></script>
+    </body>
+
+</html>
